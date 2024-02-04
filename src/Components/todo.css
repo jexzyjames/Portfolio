@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: cornflowerblue;
+}
+.input{
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    margin: auto;
+    padding: 0;
+    font-weight: 500;
+    color: orange;
+    background: none;
+}
+.create{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: 900;
+    color: black;
+    background: gold;
+}
+.wrapper{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 200px);
+    place-items: center;
+    margin: 10% auto;
+    width: 350px;
+    background: aqua;
+}
+.alert{
+    animation: top 0.3s ease  ;
+    transition: 0.3s;
+    background: red;
+    width: 350px;
+    margin: auto;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    padding: 2rem;
+}
+@keyframes top {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 200px;
+    }
+    
+}
+.active{
+    color: aquamarine;
+    text-decoration: none;
+     
+    background: goldenrod;
+}
+.her{
+    display: flex;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    align-items: center;
+    width: 350px;
+    background: aqua;
+    justify-content: space-between;
+
+}
+.edit,
+.delete{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 7px 15px;
+    font-weight: 900;
+    color: black;
+    margin-right: 5px;
+    background: orangered;
+}
+.delete{
+    background: gold;
+    padding: 7px;
+}

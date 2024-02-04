@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+}
+.testimonies{
+    padding: 3rem;
+    background: darkred;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+}
+.details{
+    color: azure;
+    transition: 0.3s ease;
+    /* position: absolute; */
+    top: 1;
+    /* padding: 1rem; */
+    line-height: 1.5;
+    animation: fade 0.3s   ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@keyframes fade {
+    0%{
+        top: -100px;
+        margin-top: -100px;
+    }
+    100%{
+        top: 0;
+        margin-top: 0;
+    }
+}
+.persons{
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+}
+.images{
+    width: 300px;
+    display: flex;
+    /* align-items: center; */
+    gap: 1px;
+    /* padding: 10px; */
+    /* justify-content: space-between; */
+    margin: auto;
+}
+.img{
+    width: 50px;
+    margin: auto;
+    height: 50px;
+    cursor: pointer;
+    object-fit: cover;
+    padding: 3px;
+    border:1px solid orange ;
+    border-radius: 100%;
+}
+.imgs{
+    width: 50px;
+    margin: auto;
+    height: 50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    object-fit: cover;
+    padding: 3px;
+    border:4px solid orange ;
+    border-radius: 100%;
+}
